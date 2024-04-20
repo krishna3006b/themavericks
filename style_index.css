@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: white;
+}
+*::selection {
+    background-color: #fff;
+    color: rgba(76, 74, 8, 0.3);;
+  }
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    font-size: 16px;
+    font-weight: 500;
+    height : 130px;
+    width : 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    gap: 50px;
+    position: fixed;
+    z-index: 99;
+    justify-content: flex-start;
+}
+#nav img{
+    margin-left: 250px;
+    height : 75px;
+}
+video{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    z-index : -1;
+    position: fixed;
+}
+#main{
+    position: relative;
+    background-color: rgb(0, 0, 0,0.39);
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+#page1 h1::before{
+    content: "FARM . EARN . ENJOY";
+    position: absolute;
+    color: BLACK;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 2px rgba(76, 74, 8, 0.3);
+    z-index: -1;
+}
+#page1 h1{
+    position: relative;
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#page1 h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+#page1 h3{
+    width : 48%;
+    font-size: 20px;
+    font-weight: 400;
+
+}

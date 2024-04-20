@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-relogin.css">
+</head>
+<body>
+    <div id="nav">
+        <img src="logo.png" alt="">
+        <a href="index.html"><p>HOME</p></a>
+        <p>DASHBOARD</p>
+        <p>HELP</p>
+        <p>ABOUT US</p>
+        <a href="login.html"><p>LOGIN</p></a>
+
+    </div>
+    <video autoplay muted loop src="background.mp4"></video>
+    <div id="main">
+            <strong><p class="error">Invalid details entered. Please try again.</p></strong>
+    <form action="authenticate.php" method="post">
+        <h3>Login Here</h3>
+        <label for="phone">Phone No.</label>
+        <input type="text" placeholder="Phone No." id="phone" name="phone" required>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password" required>
+        <input type="Submit" value="Log In" class="button"><br><br>
+        <p>Register Instead ? <a href="registration.html">Signup</a></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body{
+    margin:0;
+    width: 100%;
+    height: 100vh;
+    color : #fff;
+    font-family: 'Poppins',sans-serif;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+a>hover{
+    cursor:pointer;
+}
+#nav{
+    font-size: 16px;
+    font-weight: 500;
+    height : 130px;
+    width : 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    gap: 50px;
+    position: fixed;
+    z-index: 99;
+    justify-content: flex-start;
+}
+.logo{
+    background-color: #fff;
+    height: 10%;
+}
+.logo>img{
+    height: 100%;
+    width: 100%;
+}
+.menu_bar{
+    background-color: black;
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.menu_items{
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+.main_body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.top_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+}
+.menu_bar>p:hover{
+    cursor: pointer;
+    
+}
+
+.card{
+    margin-top: 6%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.2);
+    height: 200px;
+    width: 300px;
+    color: rgb(255, 252, 252);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover{
+    background-color: rgba(51, 183, 59, 0.6);
+}
+#card_moisture{
+       background-color: rgba(51, 183, 59, 0.2);
+}
+#card_nitrogen{
+    background-color: rgba(214, 43, 24, 0.2);
+}
+#card_potassium{
+    background-color: rgba(51, 183, 59, 0.2);
+}
+#card_phos{
+    background-color:rgba(193, 31, 31, 0.2);
+}
+#card_ph{
+    background-color: rgba(51, 183, 59, 0.2);
+}
+#card_temp{
+    background-color: rgba(51, 183, 59, 0.2);
+}
+.main_content{
+    display: flex;
+    justify-content: center;
+    gap:  40px;
+    flex-wrap: wrap;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;  
+}
+
+.main_content video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the entire container */
+}
+.cards_sol {
+    border-style: outset;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.2);
+    color:rgb(247, 245, 245);
+    width:40%;
+    margin:40px;
+    padding:20px;
+    display: none;
+    position: fixed;
+    box-shadow:0 6px 20px 0 rgba(100, 156, 131, 0.9);
+    background-color: rgb(33,31,35);
+    background-repeat: no-repeat;
+    @include filter-gradient(#53455b, #201e22, horizontal);
+    @include background-image(radial-gradient(circle at top,  rgba(83,69,91,1) 0,rgba(32,30,34,1) 70%));
+    left:450px;
+    top:100px;
+    z-index: 1; 
+    display: none;
+    animation:none;
+    vertical-align: center;
+    text-align: center;
+}
+h1{
+  cursor: pointer;  
+}

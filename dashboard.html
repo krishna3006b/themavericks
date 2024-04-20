@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriWise</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65a8c5288d261e1b5f54af7a/1hkdk49qg';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    <div id="main">
+        <div class="main_body">
+            <div id="nav" style="margin-left: 12%;">
+                <img src="logo.png" alt="">
+                <a href="dashboard.html" style=" text-decoration: none;color:white"><p>DASHBOARD</p></a>
+                <p>PROFILE</p>
+                <p>UPDATE</p>
+                <p>FEEDBACK</p>
+                <a href="logout.php" style=" text-decoration: none;color:white"><p>LOGOUT</p></a>
+            </div>
+            <div class="main_content">
+                <video autoplay muted loop>
+                    <source src="background.mp4" type="video/mp4">
+                </video>
+                <div class="card" id="card_moisture">
+                    <h1>Moisture <br> Content:
+                    <br>
+                    <span style="margin-left:40px;font-size: 25px;">30%<span></h1>
+                </div>
+                <div class="card"  id="card_nitrogen">
+                    <h1 onclick="showc()">Nitrogen <br> Content: <br>
+                        <span style="margin-left:30px;font-size: 25px;">45ml/L<span></h1>
+                </div>
+                <div class="card"  id="card_potassium">
+                    <h1>Potassium <br> Content: <br>
+                        <span style="margin-left:30px;font-size: 25px;">30ml/L<span></h1>
+                </div>
+                <div class="card"  id="card_phos">
+                    <h1>Phosphorous <br> Content: <br>
+                        <span style="margin-left:30px;font-size: 25px;">5ml/L<span></h1>
+                </div>
+                <div class="card"  id="card_ph">
+                    <h1>Soil's pH: <br>
+                        <span style="margin-left:50px;font-size: 25px;">5.5<span></h1>
+                </div>
+                <div class="card"  id="card_temp">
+                    <h1>Temperature: <br>
+                        <span style="margin-left:60px;font-size: 25px;">27°C<span></h1>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div class="cards_sol" >
+        <h1>Over Nitrogen content</h1>
+      
+        <p>
+          Apply Nitrogen Stabilizers: Use nitrogen stabilizers or inhibitors to
+          slow down the conversion of nitrogen into forms that are prone to
+          leaching or volatilization. These products help increase nitrogen
+          efficiency and reduce nutrient losses from the soil.
+        </p>
+        <p>
+          Implement Split Applications: Split nitrogen applications into multiple
+          smaller doses throughout the growing season to match crop demand and
+          minimize nitrogen losses. This approach reduces the risk of excess
+          nitrogen buildup in the soil and improves nutrient use efficiency.
+        </p>
+        <p>
+          Promote Nitrogen Fixation: Utilize nitrogen-fixing cover crops or
+          legumes in crop rotations to naturally replenish soil nitrogen levels
+          and reduce the need for external nitrogen inputs. Incorporating
+          nitrogen-fixing plants helps maintain soil fertility and balance
+          nitrogen levels over time.
+        </p>
+        <button onclick="closec()">OK</button>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
